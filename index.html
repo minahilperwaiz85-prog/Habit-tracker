@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Habit Tracker</h1>
+        <p>Build good habits everyday!</p>
+        <button id="themeBtn">Change Theme</button>
+        <form id="habitForm">
+            <input
+            type="text"
+            id="habitInput"
+            placeholder="Enter your habit name">
+            <button type="submit">Add Habit</button>
+            </form>
+            <input
+            type="text"
+            id="searchInput"
+            placeholder="search habits..."
+            >
+            <h3 id="habitCounter">Total Habits: 0</h3>
+            <h3 id="completedCounter">completed:0</h3>
+            <ul id="habitList"></ul>
+            <button id="loadMoreBtn" type="button">
+    Load More
+</button>
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
+</html>

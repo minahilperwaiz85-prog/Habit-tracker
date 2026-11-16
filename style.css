@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    min-height: 100vh;
+    padding: 30px;
+}
+.container{
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+h1{
+    text-align: center;
+    color: #6c63ff;
+    margin-bottom: 10px;
+}
+p{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #777;
+}
+button{
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 5px;
+}
+button:hover{
+    background-color: #5148d8;
+}
+#themeBtn{
+    display: block;
+    margin: 0 auto 20px;
+}
+form{
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+input{
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    font-size: 15px;
+    min-width: 0;
+}
+input:focus{
+    border-color: #6c63ff;
+}
+#searchInput{
+    width: 100%;
+    margin-bottom: 20px;
+}
+h3{
+    margin: 12px 0;
+    color: #444;
+}
+#habitList li{
+    background-color: #f4f4ff;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+#habitList li span{
+    overflow-wrap: anywhere;
+}
+body.dark{
+    background-color: #222;
+    color: white;
+}
+body.dark .container{
+    background-color: #333;
+}
+body.dark h3{
+    color: white;
+}
+body.dark #habitList li{
+    background-color: #444;
+    color: white;
+}
+body.dark{
+    background-color: #1e1e2f;
+    color: white;
+}
+body.dark.container{
+    background-color: #2d2d44;
+    color: white;
+}
+body.dark h1,
+body.dark h3,
+body.dark p{
+    color: white;
+}
+body.dark input{
+    background-color: #44445c;
+    color: white;
+    border:1px solid #777;
+}
+body.dark input::placeholder{
+    color: #add;
+}
+body.dark #habitList li{
+    background-color: #44445c;
+    color: white;
+}
+body.dark button{
+    background-color: #ff6584;
+    color: white;
+    border: none;
+}
+body.dark button:hover{
+    background-color: #e94b70;
+}
+body:not(.dark) button{
+    background-color: #6c63ff;
+    color: white;
+}
+body.dark{
+    background-color: #1e1e2f;
+    color: white;
+}
+body.dark.container{
+    background-color: #2d2d44;
+    color: white;
+}
+body.dark form,
+body.dark #habitList{
+    background-color: #2d2d44;
+    color: white;
+}
+body.dark input{
+    background-color: #44445c;
+    color: white;
+    border-color: #777;
+}
+body.dark #habitList li{
+    background-color: #44445c;
+    color: white;
+}
+body.dark .container{
+    background-color: #2d2d44 !important;
+    color: white !important;
+    border:1px solid #44445c;
+}
+body.dark .container h1,
+body.dark .container h3,
+body.dark .container p{
+    color: white !important;
+}
